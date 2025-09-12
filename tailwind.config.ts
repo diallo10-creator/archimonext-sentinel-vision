@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -38,6 +41,12 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+        },
+        corporate: {
+          blue: "hsl(var(--corporate-blue))",
+          gold: "hsl(var(--corporate-gold))",
+          light: "hsl(var(--corporate-light))",
+          gray: "hsl(var(--corporate-gray))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
