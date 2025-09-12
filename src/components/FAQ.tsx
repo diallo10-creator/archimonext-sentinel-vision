@@ -67,24 +67,24 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <Badge variant="outline" className="mb-4 text-corporate-blue border-corporate-gold">
             FAQ & Témoignages
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-corporate-blue mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-corporate-blue mb-4 sm:mb-6">
             Questions fréquentes
           </h2>
-          <p className="text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed px-4">
             Retrouvez les réponses aux questions les plus posées par nos clients
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
           {/* FAQ Section */}
           <div>
-            <h3 className="text-2xl font-bold text-corporate-blue mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-corporate-blue mb-4 sm:mb-6">
               Questions & Réponses
             </h3>
             <Accordion type="single" collapsible className="space-y-4">

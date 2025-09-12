@@ -26,38 +26,40 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight px-4">
             Votre partenaire de confiance en{' '}
             <span className="text-corporate-gold">BTP & Immobilier</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed px-4">
             ARCHIMONEXT SARL accompagne vos projets de construction, rénovation et gestion immobilière 
             à Abidjan avec expertise et professionnalisme.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4">
             <Button 
               variant="hero" 
               size="lg" 
               onClick={() => scrollToSection('contact')}
-              className="group"
+              className="group w-full sm:w-auto"
             >
-              Demander un devis gratuit
+              <span className="hidden sm:inline">Demander un devis gratuit</span>
+              <span className="sm:hidden">Devis gratuit</span>
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
               onClick={() => scrollToSection('services')}
-              className="bg-white/10 border-white/30 text-white hover:bg-white/20"
+              className="bg-white/10 border-white/30 text-white hover:bg-white/20 w-full sm:w-auto"
             >
-              Découvrir nos services
+              <span className="hidden sm:inline">Découvrir nos services</span>
+              <span className="sm:hidden">Nos services</span>
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto px-4">
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Award className="h-8 w-8 text-corporate-gold" />

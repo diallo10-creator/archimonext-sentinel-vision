@@ -51,22 +51,22 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <Badge variant="outline" className="mb-4 text-corporate-blue border-corporate-gold">
             Nos Services
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-corporate-blue mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-corporate-blue mb-4 sm:mb-6">
             Des solutions complètes pour vos projets
           </h2>
-          <p className="text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed px-4">
             ARCHIMONEXT SARL vous accompagne dans tous vos projets BTP et immobiliers 
             avec expertise et professionnalisme
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {/* BTP Services */}
           <Card className="group hover:shadow-corporate transition-all duration-300 border-corporate-gold/20">
             <CardHeader className="text-center pb-4">
@@ -156,12 +156,12 @@ const Services = () => {
         </div>
 
         {/* Service Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           <div className="relative group overflow-hidden rounded-2xl shadow-corporate">
             <img 
               src={btpServicesImage} 
               alt="Services BTP ARCHIMONEXT"
-              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-primary/70 flex items-center justify-center">
               <div className="text-center text-white">

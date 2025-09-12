@@ -51,30 +51,30 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-corporate-light">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-corporate-light">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <Badge variant="outline" className="mb-4 text-corporate-blue border-corporate-gold">
             Contact
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-corporate-blue mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-corporate-blue mb-4 sm:mb-6">
             Contactez-nous dès aujourd'hui
           </h2>
-          <p className="text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed px-4">
             Prêt à démarrer votre projet ? Notre équipe est là pour vous accompagner 
             et répondre à toutes vos questions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Contact Information Cards */}
           <Card className="shadow-corporate border-corporate-gold/20 hover:shadow-gold transition-shadow">
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-8 w-8 text-white" />
+            <CardContent className="p-4 sm:p-6 text-center">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-corporate-blue mb-2">Adresse</h3>
-              <p className="text-corporate-gray leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-semibold text-corporate-blue mb-2">Adresse</h3>
+              <p className="text-sm sm:text-base text-corporate-gray leading-relaxed">
                 Abidjan, Yopougon Maroc<br />
                 Carrefour Tiken Jah<br />
                 Côte d'Ivoire
