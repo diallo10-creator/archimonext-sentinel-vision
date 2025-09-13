@@ -43,43 +43,63 @@ const ChatWidget = () => {
   const getContextualResponse = (question: string): string => {
     const lowerQuestion = question.toLowerCase();
 
-    // Services BTP
-    if (lowerQuestion.includes('btp') || lowerQuestion.includes('construction') || lowerQuestion.includes('travaux')) {
-      return 'ARCHIMONEXT SARL propose des services BTP complets : construction de bâtiments, travaux publics, et rénovation. Nous intervenons sur tous types de projets avec notre équipe expérimentée.';
+    // Présentation entreprise et slogan
+    if (lowerQuestion.includes('qui êtes-vous') || lowerQuestion.includes('présentation') || lowerQuestion.includes('archimonext') || lowerQuestion.includes('entreprise')) {
+      return 'ARCHIMONEXT SARL - "Le Conseil de la Sentinelle" 🏢 Nous sommes une société de droit ivoirien spécialisée dans le BTP, l\'achat, vente et gestion immobilière. Votre partenaire de confiance en BTP et immobilier avec nos valeurs : Professionnalisme, Transparence, Engagement et Proximité.';
     }
 
-    // Services immobiliers
-    if (lowerQuestion.includes('immobilier') || lowerQuestion.includes('achat') || lowerQuestion.includes('vente') || lowerQuestion.includes('location')) {
-      return 'Nos services immobiliers incluent l\'achat, la vente et la gestion de biens immobiliers. Nous vous accompagnons dans tous vos projets d\'investissement immobilier.';
+    // Services BTP détaillés
+    if (lowerQuestion.includes('btp') || lowerQuestion.includes('construction') || lowerQuestion.includes('bâtiment') || lowerQuestion.includes('travaux publics') || lowerQuestion.includes('rénovation')) {
+      return '🏗️ Services BTP ARCHIMONEXT :\n• Construction de bâtiments\n• Travaux publics\n• Rénovation\nNous offrons des services de qualité avec une expertise locale reconnue en Côte d\'Ivoire.';
     }
 
-    // Contact et localisation
-    if (lowerQuestion.includes('contact') || lowerQuestion.includes('adresse') || lowerQuestion.includes('téléphone') || lowerQuestion.includes('où')) {
-      return 'Nous sommes situés à Abidjan, Yopougon Maroc – Carrefour Tiken Jah. Contactez-nous au +225 08 41 31 00 (WhatsApp disponible) ou par email : jbkconsultingsarlu@gmail.com';
+    // Services immobiliers détaillés
+    if (lowerQuestion.includes('immobilier') || lowerQuestion.includes('achat') || lowerQuestion.includes('vente') || lowerQuestion.includes('location') || lowerQuestion.includes('gestion')) {
+      return '🏡 Services Immobiliers ARCHIMONEXT :\n• Achat de biens immobiliers\n• Vente de propriétés\n• Gestion immobilière (location, suivi, entretien)\nNous accompagnons particuliers, entreprises et investisseurs dans tous leurs projets immobiliers.';
+    }
+
+    // Contact et localisation précise
+    if (lowerQuestion.includes('contact') || lowerQuestion.includes('adresse') || lowerQuestion.includes('téléphone') || lowerQuestion.includes('où') || lowerQuestion.includes('localisation')) {
+      return '📍 ARCHIMONEXT SARL\nAdresse : Abidjan, Yopougon Maroc – Carrefour Tiken Jah\n📱 WhatsApp : +225 08 41 31 00\n📧 Email : jbkconsultingsarlu@gmail.com\nContactez-nous pour tous vos besoins BTP et immobiliers !';
+    }
+
+    // Gérant avec détails
+    if (lowerQuestion.includes('gérant') || lowerQuestion.includes('directeur') || lowerQuestion.includes('responsable') || lowerQuestion.includes('bohoussou') || lowerQuestion.includes('juste')) {
+      return '👤 Notre Gérant : M. Bohoussou Kouame Juste\nIl supervise personnellement tous nos projets avec un engagement total vers l\'excellence et la satisfaction client. Une expertise reconnue dans le secteur BTP et immobilier ivoirien.';
+    }
+
+    // Mission et vision
+    if (lowerQuestion.includes('mission') || lowerQuestion.includes('vision') || lowerQuestion.includes('valeurs') || lowerQuestion.includes('pourquoi')) {
+      return '🎯 Notre Mission : Offrir des services de qualité en BTP et immobilier\n✨ Notre Vision : Être un partenaire de confiance pour la construction, l\'investissement et la gestion immobilière\n💎 Nos Valeurs : Professionnalisme, Transparence, Engagement, Proximité avec les clients.';
+    }
+
+    // Services divers
+    if (lowerQuestion.includes('divers services') || lowerQuestion.includes('autres services') || lowerQuestion.includes('services techniques')) {
+      return '⚙️ Services Divers ARCHIMONEXT :\nNous proposons également d\'autres services techniques et logistiques selon notre expertise. Contactez-nous pour discuter de vos besoins spécifiques !';
     }
 
     // Devis et tarifs
-    if (lowerQuestion.includes('devis') || lowerQuestion.includes('prix') || lowerQuestion.includes('tarif') || lowerQuestion.includes('coût')) {
-      return 'Nous offrons des devis gratuits pour tous nos services. Contactez-nous avec les détails de votre projet pour recevoir une estimation personnalisée sous 24h.';
+    if (lowerQuestion.includes('devis') || lowerQuestion.includes('prix') || lowerQuestion.includes('tarif') || lowerQuestion.includes('coût') || lowerQuestion.includes('estimation')) {
+      return '💰 Devis Gratuits ARCHIMONEXT !\nNous offrons des devis gratuits et personnalisés pour tous nos services BTP et immobiliers. Contactez-nous avec les détails de votre projet pour une estimation précise sous 24h.';
     }
 
-    // Délais
-    if (lowerQuestion.includes('délai') || lowerQuestion.includes('durée') || lowerQuestion.includes('combien de temps')) {
-      return 'Les délais varient selon la complexité du projet. Pour les projets BTP, comptez généralement 2-6 mois selon l\'envergure. Nous vous fournirons un planning détaillé avec votre devis.';
+    // Secteurs d'activité
+    if (lowerQuestion.includes('secteur') || lowerQuestion.includes('activité') || lowerQuestion.includes('domaine')) {
+      return '🏢 Secteurs d\'activité ARCHIMONEXT SARL :\n• BTP (Bâtiment et Travaux Publics)\n• Immobilier (Achat, Vente, Gestion)\n• Services techniques divers\nUne expertise complète au service de vos projets !';
     }
 
-    // Gérant
-    if (lowerQuestion.includes('gérant') || lowerQuestion.includes('directeur') || lowerQuestion.includes('responsable')) {
-      return 'ARCHIMONEXT SARL est dirigée par M. Bohoussou Kouame Juste, notre gérant expérimenté qui supervise tous nos projets avec professionnalisme et engagement.';
+    // Statut juridique
+    if (lowerQuestion.includes('statut') || lowerQuestion.includes('sarl') || lowerQuestion.includes('juridique') || lowerQuestion.includes('société')) {
+      return '📋 ARCHIMONEXT SARL\nStatut : Société de droit ivoirien (SARL)\nType : Entreprise privée\nImplantation locale solide avec une expertise reconnue en Côte d\'Ivoire.';
     }
 
-    // Horaires
-    if (lowerQuestion.includes('heure') || lowerQuestion.includes('horaire') || lowerQuestion.includes('ouvert')) {
-      return 'Nos horaires : Lundi-Vendredi 8h-18h, Samedi 8h-14h. Pour les urgences, contactez-nous 24h/7j via WhatsApp au +225 08 41 31 00.';
+    // Cibles clientèle
+    if (lowerQuestion.includes('client') || lowerQuestion.includes('cible') || lowerQuestion.includes('pour qui')) {
+      return '👥 Nos Clients ARCHIMONEXT :\n• Particuliers (projets personnels)\n• Entreprises (projets commerciaux)\n• Investisseurs (placements immobiliers)\n• Promoteurs (développements)\nChaque client bénéficie d\'un accompagnement personnalisé !';
     }
 
-    // Réponse par défaut
-    return 'Pour cette question spécifique, je vous recommande de contacter directement notre équipe au +225 08 41 31 00 (WhatsApp) ou jbkconsultingsarlu@gmail.com. Nous pourrons vous donner des informations détaillées et personnalisées.';
+    // Réponse par défaut basée sur le RAG
+    return '🤖 Je suis l\'assistant ARCHIMONEXT SARL - "Le Conseil de la Sentinelle". Pour des informations spécifiques sur nos services BTP et immobiliers, contactez-nous directement :\n📱 WhatsApp : +225 08 41 31 00\n📧 jbkconsultingsarlu@gmail.com\nNotre équipe vous donnera tous les détails personnalisés !';
   };
 
   const handleSendMessage = () => {
