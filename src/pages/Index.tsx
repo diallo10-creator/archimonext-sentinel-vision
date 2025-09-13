@@ -6,6 +6,8 @@ import Services from '@/components/Services';
 import Contact from '@/components/Contact';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+import ChatWidget from '@/components/ChatWidget';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   return (
@@ -17,6 +19,10 @@ const Index = () => {
       <Contact />
       <FAQ />
       <Footer />
+      
+      {/* Floating Elements */}
+      <ChatWidget />
+      <WhatsAppButton />
     </main>
   );
 };
