@@ -12,36 +12,40 @@ import { Star, Quote } from 'lucide-react';
 const FAQ = () => {
   const faqs = [
     {
-      question: "Quels sont vos délais moyens pour les projets BTP ?",
-      answer: "Les délais varient selon la complexité du projet. Pour une construction résidentielle standard, comptez 6-12 mois. Pour des rénovations, 2-6 mois selon l'ampleur. Nous établissons un planning détaillé lors du devis gratuit."
+      question: "Qu'est-ce qu'ARCHIMONEXT SARL ?",
+      answer: "ARCHIMONEXT SARL - Le Conseil de la Sentinelle est une société de droit ivoirien spécialisée dans le BTP, l'achat, la vente et la gestion immobilière, ainsi que divers services. Nous sommes basés à Abidjan, Yopougon Maroc – Carrefour Tiken Jah."
     },
     {
-      question: "Comment se déroule le processus de gestion immobilière ?",
-      answer: "Notre service de gestion complète inclut : recherche de locataires, vérification des dossiers, rédaction des baux, encaissement des loyers, gestion des réparations et suivi administratif. Nous vous rendons compte mensuellement."
+      question: "Qui dirige ARCHIMONEXT SARL ?",
+      answer: "Notre entreprise est dirigée par M. Bohoussou Kouame Juste, gérant expérimenté qui supervise l'ensemble de nos activités avec professionnalisme et engagement."
     },
     {
-      question: "Proposez-vous des devis gratuits ?",
-      answer: "Oui, tous nos devis sont gratuits et sans engagement. Nous nous déplaçons sur site pour évaluer précisément vos besoins et vous proposer la solution la mieux adaptée à votre budget."
+      question: "Quels sont vos services BTP ?",
+      answer: "Nos services BTP incluent la construction de bâtiments, les travaux publics et la rénovation. Nous offrons des services de qualité pour tous vos projets de construction et d'infrastructure."
     },
     {
-      question: "Quelles garanties offrez-vous sur vos travaux ?",
-      answer: "Nous offrons une garantie décennale sur tous nos travaux de construction, une garantie biennale sur les équipements et une garantie de parfait achèvement d'un an. Toutes nos interventions sont assurées."
+      question: "Proposez-vous des services immobiliers ?",
+      answer: "Oui, nous proposons une gamme complète de services immobiliers : achat de biens, vente de biens, et gestion immobilière (location, suivi, entretien). Nous vous accompagnons dans tous vos projets immobiliers."
     },
     {
-      question: "Travaillez-vous avec des particuliers et des entreprises ?",
-      answer: "Absolument ! Nous accompagnons aussi bien les particuliers pour leurs projets résidentiels que les entreprises pour leurs besoins commerciaux et industriels. Notre expertise s'adapte à tous types de clients."
+      question: "Comment vous contacter ?",
+      answer: "Vous pouvez nous contacter via WhatsApp au +225 08 41 31 00 ou par email à jbkconsultingsarlu@gmail.com. Notre siège social est situé à Abidjan, Yopougon Maroc – Carrefour Tiken Jah."
     },
     {
-      question: "Comment évaluez-vous la valeur d'un bien immobilier ?",
-      answer: "Notre évaluation se base sur l'analyse du marché local, l'état du bien, sa localisation, les équipements et les prix de vente récents dans le quartier. Nous utilisons des méthodes professionnelles reconnues."
+      question: "Quelles sont vos valeurs d'entreprise ?",
+      answer: "Nos valeurs fondamentales sont le professionnalisme, la transparence, l'engagement et la proximité avec nos clients. Nous nous engageons à être votre partenaire de confiance en BTP et immobilier."
     },
     {
-      question: "Acceptez-vous les paiements échelonnés ?",
-      answer: "Oui, nous proposons des solutions de paiement flexibles adaptées à votre situation. Les modalités sont définies dans le contrat après étude de votre dossier."
+      question: "Quelle est votre mission ?",
+      answer: "Notre mission est d'offrir des services de qualité en BTP et immobilier, en étant un partenaire de confiance pour la construction, l'investissement et la gestion immobilière."
     },
     {
-      question: "Intervenez-vous uniquement sur Abidjan ?",
-      answer: "Bien que basés à Abidjan (Yopougon), nous intervenons sur toute la Côte d'Ivoire selon la nature et l'importance du projet. N'hésitez pas à nous consulter pour vos projets en régions."
+      question: "Travaillez-vous avec quels types de clients ?",
+      answer: "Nous travaillons avec particuliers, entreprises, investisseurs et promoteurs. Notre expertise nous permet de nous adapter aux besoins spécifiques de chaque type de client, qu'il s'agisse de projets résidentiels, commerciaux ou industriels."
+    },
+    {
+      question: "Où intervenez-vous géographiquement ?",
+      answer: "Bien que notre siège soit basé à Abidjan (Yopougon Maroc), nous intervenons sur l'ensemble de la Côte d'Ivoire selon la nature et l'ampleur de vos projets."
     }
   ];
 
